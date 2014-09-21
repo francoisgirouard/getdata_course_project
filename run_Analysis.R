@@ -69,7 +69,8 @@ firstTidyDataSet <- cbind(Subject, Activity, X)
 # for each activity and each subject.
 print("Creating second tidy data set...")
 secondTidyDataSet <- aggregate(firstTidyDataSet[,-(1:2)],
-                               by = firstTidyDataSet[,1:2], FUN = sd)
+                               by = firstTidyDataSet[,1:2], FUN = mean)
+                               
 # Write the second tidy data set to file
 print(paste("Writing second tidy data set to ", OUTPUT_PATH ," ...", sep = "",
             collapse = ""))
