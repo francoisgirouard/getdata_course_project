@@ -1,3 +1,7 @@
+# run_Analysis.R script for Coursera Getting and Cleaning Data course project
+# Author: François Girouard
+# Date: 2014-09-21
+
 # Constant properties
 ARCHIVE_URL <- paste("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectf",
                      "iles%2FUCI%20HAR%20Dataset.zip", sep = "", collapse = "")
